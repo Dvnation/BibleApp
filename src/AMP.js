@@ -73,7 +73,6 @@ return(
   {console.log(AMPscan.length)}
   <Test/>
   <Nets AMPscan= {AMPscan} AMPscanLength={AMPscan.length} scanner={scanner} scannerLength={scannerLength} bibleName = {bibleName}  CahapterNumbering= {CahapterNumbering}/>
-<Vw bibleNamer={bibleNamer} chapter={chapter} />
   </>
 )
 
