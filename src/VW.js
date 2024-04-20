@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
 
 
 
@@ -6,70 +6,70 @@ import { useState, useEffect } from "react"
 
 
 
-export function Vw({bibleNamer,chapter}){
+// export function Vw({bibleNamer,chapter}){
 
-    const [VWversion,setVWversion] = useState([])
+//     const [VWversion,setVWversion] = useState([])
 
-    useEffect(() => {
-        let data = require("../src/JSON/VW.json");
-        setVWversion([...VWversion, data]);
-      }, [])
-
-
-    let VWscan = []
+//     useEffect(() => {
+//         let data = require("../src/JSON/VW.json");
+//         setVWversion([...VWversion, data]);
+//       }, [])
 
 
-    const [VWscanLength,setVWScanLength] = useState()
+//     let VWscan = []
+
+
+//     const [VWscanLength,setVWScanLength] = useState()
   
-    VWversion.map(item=>{
-      let XMLBIBLE = item.XMLBIBLE
+//     VWversion.map(item=>{
+//       let XMLBIBLE = item.XMLBIBLE
       
-      XMLBIBLE.map(item=>{
-          let BIBLEBOOK = item.BIBLEBOOK
+//       XMLBIBLE.map(item=>{
+//           let BIBLEBOOK = item.BIBLEBOOK
       
-          BIBLEBOOK.map(item=>{
-              let CHAPTER = item.CHAPTER
+//           BIBLEBOOK.map(item=>{
+//               let CHAPTER = item.CHAPTER
       
       
-           
-      CHAPTER.map(item=>{
+//            console.log(CHAPTER);
+//       CHAPTER.map(item=>{
         
-        // console.log(won)
-          if(CHAPTER.length>25 && CHAPTER[chapter]){
+//         // console.log(won)
+//           if(CHAPTER.length>25 && CHAPTER[chapter]){
       
-            let shake = CHAPTER[chapter].VERS
+//             let shake = CHAPTER[chapter].VERS
   
-            shake.map(item=>{
-              VWscan.push(item)
-              console.log(item);
+//             shake.map(item=>{
+//               VWscan.push(item)
+//               console.log(item);
 
   
   
-            })
+//             })
             
   
     
-        }
+//         }
   
-        })
+//         })
     
     
-       })
-     })
-    return(
+//        })
+//      })
+//     return(
   
-      <>
+//       <>
     
-      </>
-    )
-    })
+//       </>
+//     )
+//     })
 
 
-    return(
-        <>
-        {console.log(VWscan.length)}
-        </>
-    )
+//     return(
+//         <>
+//         {console.log(VWscan.length)}
+//         </>
+//     )
 
 
-}
+// }

@@ -65,7 +65,8 @@ export function Amp({bibleName,chapter,AMP,scan,scanner,CahapterNumbering,NET,sc
 
  
 
-  
+  // <Vw bibleNamer={bibleNamer} chapter={chapter} />
+ 
 
 return(
 
@@ -73,7 +74,6 @@ return(
   {console.log(AMPscan.length)}
   <Test/>
   <Nets AMPscan= {AMPscan} AMPscanLength={AMPscan.length} scanner={scanner} scannerLength={scannerLength} bibleName = {bibleName}  CahapterNumbering= {CahapterNumbering}/>
-<Vw bibleNamer={bibleNamer} chapter={chapter} />
   </>
 )
 

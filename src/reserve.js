@@ -81,38 +81,6 @@ console.log(scanners);
 
 
 
-//   const NETlified = (book, chapter, verse) => {
-//     NET.map(item => {
-//       let books = item.verses;
-
-//       let booknames = books.filter(itemer => itemer.book_name == book);
-
-//       let chapterd = booknames.filter(item => item.chapter == chapter);
-
-//       let versed = chapterd.filter(item => item.verse == verse);
-
-//       versed.map(item => {
-//         let list = document.createElement("li");
-//         let ul = document.createElement("ul");
-
-//         list.innerHTML = item.text;
-
-//         ul.appendChild(list);
-
-//         document.querySelector("#NET").appendChild(ul);
-//       });
-
-//       let desig = document.createElement("button");
-//       desig.innerHTML = "brand";
-
-//       desig.addEventListener("click", function () {
-//         console.log(versed);
-//       });
-
-//       document.querySelector("#NET").appendChild(desig);
-//     });
-//   };
-
 let scanner = [];
     let iterate = [];
     let scan = []
